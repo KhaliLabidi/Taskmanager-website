@@ -1,7 +1,9 @@
 const express = require("express");
 const cors = require('cors'); // Import the cors package
 const bodyParser = require("body-parser");
-const dbConnect = require("./db/dbConnect");
+console.log("Attempting to load dbConnect...");
+const dbConnect = require('./dbConnect');
+console.log("dbConnect loaded successfully.");
 const User = require("./db/user");
 const bcrypt = require("bcryptjs");
 

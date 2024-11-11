@@ -1,0 +1,10 @@
+/* LoginPage.css */
+.card {
+    max-height:none;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.actionButtons button {
+    margin-left: 10px;
+}
