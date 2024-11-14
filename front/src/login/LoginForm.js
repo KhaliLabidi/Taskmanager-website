@@ -6,7 +6,7 @@ import loginImage from './loginImage.jpg'; // Adjust the path as needed
 const LoginForm = ({ formData, handleChange, handleSubmit, errors }) => {
     return (
         <div>
-            <section className="p-5 w-100" style={{ backgroundColor: "#eee", borderRadius: ".5rem .5rem 0 0" }}>
+            <section className="p-5 w-100 h-100" style={{ backgroundColor: "#eee", borderRadius: ".5rem .5rem 0 0" }}>
                 <div className="row">
                     <div className="col-12">
                         <div className="card text-black" style={{ borderRadius: "25px" }}>

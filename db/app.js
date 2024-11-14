@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 console.log("Attempting to load dbConnect...");
 const dbConnect = require('./dbConnect');
 console.log("dbConnect loaded successfully.");
-const User = require("./db/user");
+const User = require("./user");
 const bcrypt = require("bcryptjs");
 
 const app = express();
@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: 'http://localhost:3001', // Corrected origin without trailing slash
+  origin: '*', // Corrected origin without trailing slash
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
